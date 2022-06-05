@@ -17,9 +17,10 @@ const createDate = (arrDates, index) => {
     }
 
     let hasil = arrEpochDates.sort().join("-");
-    return hasil;
+    return hasil.toString();
   } else {
-    return Date.parse(arrDates[index]) / 1000;
+    let hasil = Date.parse(arrDates[index]) / 1000;
+    return hasil.toString();
   }
 };
 
